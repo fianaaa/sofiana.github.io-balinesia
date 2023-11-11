@@ -1,0 +1,797 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Wisata Bali</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="c:\Balinesia\img\logo\logo.jpg">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="modal.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="c:\Balinesia\img\logo\20231110_111226_0000-removebg-preview.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a class="active" href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a class="" href="travel_destination.html">Destination</a></l/li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="book.html">Registrasi</a></li>
+                                            <!-- Tombol untuk membuka modal -->
+                                            <button class="open-button" onclick="openmodal()">sign up</button>
+                                        </ul>
+                                    </nav>
+                                    <!-- modal -->
+                                    <div id="signupmodal" class="modal">
+                                        <div class="modal-content">
+                                            <span class="close-button" onclick="closemodal()">&times;</span>
+                                            <h2>sign up</h2>
+                                            <form class="form-container" action="your_server_endpoint.php" method="POST">
+                                                <div class="form-group">
+                                                    <label for="Nama">Nama:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Alamat">Alamat:</label>
+                                                    <input type="password" id="password" name="password" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Email">Email:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="No hp">No Hp:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Kode Pos">Kode Pos:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Jenis Kelamin">Jenis Kelamin:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Agama">Agama:</label>
+                                                    <input type="text" id="username" name="username" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="submit" value="sign up">
+                                                </div>
+                                            </form>
+                                        </div>
+                                     </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+                                <div class="social_wrap d-flex align-items-center justify-content-end">
+                                    <div class="number">
+                                        <p> <i class="fa fa-phone"></i> (0256)-928 256</p>
+                                    </div>
+                                    <div class="social_links d-none d-xl-block">
+                                        <ul>
+                                            <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-linkedin"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                            <li><a href="#"> <i class="fa fa-google-plus"></i> </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seach_icon">
+                                <a data-toggle="modal" data-target="#exampleModalCenter" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-md-12">
+                            <div class="slider_text text-center">
+                                <h3>Denpasar, Bali</h3>
+                                <p>Explore wisata di Bali sekarang dengan keindahan alamnya</p>
+                                <a href="#" class="boxed-btn3">jelajah sekarang!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center slider_bg_2 overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-md-12">
+                            <div class="slider_text text-center">
+                                <h3>Wonderfull Indonesia</h3>
+                                <p>Keindahan alam yang sempurna</p>
+                                <a href="#" class="boxed-btn3">jelajah sekarang!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_slider  d-flex align-items-center slider_bg_3 overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-12 col-md-12">
+                            <div class="slider_text text-center">
+                                <h3>Balinesia</h3>
+                                <p>Indahnya Bali!</p>
+                                <a href="#" class="boxed-btn3">jelajah sekarang!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- where_togo_area_start  -->
+    <div class="where_togo_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="form_area">
+                        <h3>Mau pergi kemana?</h3>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="search_wrap">
+                        <form class="search_form" action="#">
+                            <div class="input_field">
+                                <input type="text" placeholder="tujuan">
+                            </div>
+                            <div class="input_field">
+                                <input id="datepicker" placeholder="tanggal">
+                            </div>
+                            <div class="input_field">
+                                <select>
+                                    <option data-display="tipe travel">fullpack</option>
+                                    <option value="1">standar</option>
+                                    <option value="2">medium</option>
+                                    <option value="3">premium</option>
+                                </select>
+                            </div>
+                            <div class="search_btn">
+                                <button class="boxed-btn4 " type="submit" >Cari</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- where_togo_area_end  -->
+    
+    <!-- popular_destination_area_start  -->
+    <div class="popular_destination_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb_70">
+                        <h3>Populer di Bali</h3>
+                        <p>pergilah ketempat yang dimana kamu bisa merasakan yang namanya hidup, indonesia sangatlah luas!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0726.JPG" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Pantai Kuta <a href="travel_destination.html">  07 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0731.JPG" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Wisata Seminyak<a href="travel_destination.html">  03 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_002.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Pantai Pandawa<a href="travel_destination.html">  10 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_000.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Uluwatu Temple <a href="travel_destination.html">  02 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_001.png" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Gunung Batur Kintamani <a href="travel_destination.html">  02 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_destination">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0729.JPG" alt="">
+                        </div>
+                        <div class="content">
+                            <p class="d-flex align-items-center">Nusa Penida <a href="travel_destination.html">  05 Places</a> </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular_destination_area_end  -->
+
+    <!-- newletter_area_start  -->
+    <div class="newletter_area overlay">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-10">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="newsletter_text">
+                                <h4>Apa yang kamu cari disini?</h4>
+                                <p>kamu bisa mengikuti kami untuk selengkapnya lewat subscribe disini.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="mail_form">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-9 col-md-8">
+                                        <div class="newsletter_field">
+                                            <input type="email" placeholder="Your mail" >
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="newsletter_btn">
+                                            <button class="boxed-btn4 " type="submit" >Subscribe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newletter_area_end  -->
+
+    <div class="popular_places_area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb_70">
+                        <h3>Our customers</h3>
+                        <p>mereka yang berbicara.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0726.JPG" alt="">
+                            <a href="#" class="pricee"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Pantai Kuta</h3></a>
+                            <p>keindahan pantainya</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">2 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0731.JPG" alt="">
+                            <a href="#" class="prise"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Wisata Seminyak</h3></a>
+                            <p>puri-puri candi</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(15 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">5 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_002.png" alt="">
+                            <a href="#" class="prise"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Pantai Pandawa</h3></a>
+                            <p>keindahan pantainya</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(30 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">3 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_000.png" alt="">
+                            <a href="#" class="prise"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Uluwatu Temple</h3></a>
+                            <p>wisata estetik</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(17 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">1 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\File_001.png" alt="">
+                            <a href="#" class="prise"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Gunung Batur Kintamani</h3></a>
+                            <p>keindahan suasana gunung</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(10 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">5 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img src="c:\Balinesia\img\trip\IMG_0729.JPG" alt="">
+                            <a href="#" class="prise"></a>
+                        </div>
+                        <div class="place_info">
+                            <a href="destination_details.html"><h3>Nusa Penida</h3></a>
+                            <p>Best of view beach</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center">
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i> 
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(40 orang mereview)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-clock-o"></i>
+                                    <a href="#">1 hari</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="more_place_btn text-center">
+                        <a class="boxed-btn4" href="#">pilih</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video_area video_bg overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video_wrap text-center">
+                        <h3>Enjoy Video</h3>
+                        <video controls="true" width="400px">
+                        <source src="c:\Balinesia\video\Bali in 8k ULTRA HD HDR -  Paradise of Asia (60 FPS).mp4" type="video/webm">
+                        </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    
+    <!-- testimonial_area  -->
+    <div class="testimonial_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <div class="author_thumb">
+                                            <img src="img/testmonial/author.png" alt="">
+                                        </div>
+                                        <p>"Bali memang indah! sejuta keindahan yang ada di Indonesia.</p>
+                                        <div class="testmonial_author">
+                                            <h3>@User 1</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <div class="author_thumb">
+                                            <img src="img/testmonial/author.png" alt="">
+                                        </div>
+                                        <p>"Wisata disini memang best jadi incaran para touris mancanegara.</p>
+                                        <div class="testmonial_author">
+                                            <h3>@User 2</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <div class="author_thumb">
+                                            <img src="img/testmonial/author.png" alt="">
+                                        </div>
+                                        <p>"Dengan keindahan Alam yang lestari saya suka berlibur di Bali.</p>
+                                        <div class="testmonial_author">
+                                            <h3>@User 3</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /testimonial_area  -->
+
+
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4 ">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="c:\Balinesia\img\logo\20231110_112426_0000-removebg-preview.png" alt="">
+                                </a>
+                            </div>
+                            <p>Nikmati Perjalanan Anda Bersama Kami <br> Denpasar, Bali <br>
+                                <a href="#">(023)167 826 2567</a> <br>
+                                <a href="#">contact@balinesiaofficial_</a>
+                            </p>
+                            <div class="socail_links">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube-play"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Company
+                            </h3>
+                            <ul class="links">
+                                <li><a href="#">Galerry</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Destination</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                Social Media
+                            </h3>
+                            <ul class="links double_links">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">: Balinesia</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">: Word of Bali</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">: City.Balinesia</a></li>
+                                <li><a href="#">Youtube</a></li>
+                                <li><a href="#">: Balinesia.Official</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                
+                            </h3>
+                            <div class="instagram_feed">
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/6.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-danger btn-lg-square back-to-top"
+><i class="bi bi-arrow-up"></i
+></a>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- kembali ke link jangan dihapus. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website made with <i aria-hidden="true"></i> by <a href="" target="_blank">0086 Sofiana</a>
+<!-- kembali ke link jangan dihapus -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- Modal -->
+  <div class="modal fade custom_search_pop" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="serch_form">
+            <input type="text" placeholder="Search" >
+            <button type="submit">search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- link that opens popup -->
+<!--     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script> -->
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/slick.min.js"></script>
+   
+
+    
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+        });
+    </script>
+</body>
+
+</html>
